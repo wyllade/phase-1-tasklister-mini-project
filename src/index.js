@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (taskText === "") return;
 
     
-    const taskItem = document.createElement("li");
+    const taskItem = document.createElement("li"); 
     taskItem.innerHTML = `<strong>${taskText}</strong> (Assigned to: ${userText})`;
     taskItem.style.color = getPriorityColor(priority);
     taskItem.style.transition = "all 0.3s ease";
@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
       taskItem.remove();
     });
 
-   
 
  
     taskItem.appendChild(completeButton);
